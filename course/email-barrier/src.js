@@ -40,7 +40,7 @@ function isTemporaryEmail(emailAddress) {
   // Reuse email regex from angularjs
   // @see https://github.com/angular/angular.js/blob/master/src/ng/directive/input.js#L14
   // @see https://github.com/ownego/valdr
-  var regexPattern = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@(?!mailinator|maildrop|dispostable|getnada|spamgourmet|sharklasers|guerrillamail|grr|pokemail|spam4|harakirimail|yopmail|mvrht)[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])+(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])+)*$/;
+  var regexPattern = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@(?!mailinator|maildrop|dispostable|getnada|spamgourmet|sharklasers|guerrillamail|grr|pokemail|spam4|harakirimail|yopmail|mvrht)[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9]))*$/;
 
   return !!emailAddress.match(regexPattern);
 }
